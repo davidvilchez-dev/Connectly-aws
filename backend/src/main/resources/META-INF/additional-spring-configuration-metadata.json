@@ -1,0 +1,29 @@
+{
+  "properties": [
+    {
+      "name": "application.security.jwt.secret-key",
+      "type": "java.lang.String",
+      "description": "Clave secreta en Base64 para firmar los tokens JWT."
+    },
+    {
+      "name": "application.security.jwt.expiration",
+      "type": "java.lang.Long",
+      "description": "Tiempo de expiración del token JWT en milisegundos (por defecto 86400000 = 24h)."
+    },
+    {
+      "name": "cloudinary.cloud-name",
+      "type": "java.lang.String",
+      "description": "Nombre del cloud en Cloudinary."
+    },
+    {
+      "name": "cloudinary.api-key",
+      "type": "java.lang.String",
+      "description": "API Key de Cloudinary."
+    },
+    {
+      "name": "cloudinary.api-secret",
+      "type": "java.lang.String",
+      "description": "API Secret de Cloudinary."
+    }
+  ]
+}

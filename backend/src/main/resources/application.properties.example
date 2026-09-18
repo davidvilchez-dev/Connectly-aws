@@ -1,0 +1,21 @@
+spring.application.name=backend
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/connectly_db
+spring.datasource.username=tu_usuario_postgres
+spring.datasource.password=tu_contraseña_postgres
+
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.jpa.hibernate.ddl-auto=update
+
+# JWT Configuration
+application.security.jwt.secret-key=aqui_pon_tu_clave_secreta_jwt_de_256_bits_como_minimo
+application.security.jwt.expiration=86400000
+
+# Cloudinary Configuration
+cloudinary.cloud-name=tu_cloud_name
+cloudinary.api-key=tu_api_key
+cloudinary.api-secret=tu_api_secret
+
+# Multipart / File Upload Configuration
+spring.servlet.multipart.max-file-size=10MB
+spring.servlet.multipart.max-request-size=10MB
