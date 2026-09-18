@@ -40,6 +40,7 @@ public class SecurityConfig {
                         // Endpoints públicos: registro y login
                         .requestMatchers("/api/auth/**").permitAll()
                         // Cualquier otro endpoint requiere autenticación
+                        .requestMatchers("/actuator/health").permitAll()
                         .anyRequest().authenticated())
                 .sessionManagement(session -> session
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
